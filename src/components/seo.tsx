@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql, PageProps } from "gatsby"
 
-export const Seo = ({ children }:any) => {
+export const Seo = ({ children }: any) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,6 +30,9 @@ export const Seo = ({ children }:any) => {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
       <meta name="twitter:title" content={defaultTitle} />
       <meta name="twitter:description" content={metaDescription} />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
       {children}
     </>
   )
