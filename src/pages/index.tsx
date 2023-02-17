@@ -4,7 +4,7 @@ import { Link, HeadFC } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { Layout, LinkButton, Seo } from "../components"
-import { Contact, Container, Device, MajorPart, Medical, MinorPart, Product, Science, Video } from "./indexStyle"
+import { Contact, Container, Device, MajorPart, Medical, MinorPart, Product, Science, Video } from "../components/indexStyle"
 
 export const Home = () => (
   <Layout>
