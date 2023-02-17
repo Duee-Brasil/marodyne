@@ -1,5 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 import { Header } from "./header"
 import { Footer } from "./footer"
@@ -11,7 +13,11 @@ const Main = styled.main`
   margin: auto;
 `
 
+const firebaseConfig = JSON.parse(atob(process.env.GATSBY_FIREBASE_CONFIG as string))
+
 export const Layout = ({ children }: any) => {
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 
   return (
     <>

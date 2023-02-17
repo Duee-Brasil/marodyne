@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Leticia Godoy <letgodoy.com>",
   "dependencies": {
+    "firebase": "^9.17.1",
     "gatsby": "^5.6.0",
     "gatsby-plugin-image": "^3.6.0",
     "gatsby-plugin-manifest": "^5.6.0",
