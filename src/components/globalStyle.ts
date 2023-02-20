@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
         background: white;
         font-family: "Montserrat", Open-Sans, Helvetica, Sans-Serif;
         font-weight: 300;
-        box-sizing: border-box;
         word-wrap: break-word;
     }
 
@@ -27,6 +26,6 @@ export const GlobalStyle = createGlobalStyle`
         text-align: justify;
         line-height: 1.8rem;
         font-size: 1.2rem;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 `

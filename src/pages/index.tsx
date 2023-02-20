@@ -42,7 +42,7 @@ export const Home = () => (
             obesity, relieving minor pain or treating a temporary increase in local circulation may
             be safely overcome using Marodyne LiV for 10 - 20 minutes a day.
           </p>
-          <Link to="/">Buy Now</Link>
+          <LinkButton link="/" title="Buy Now" />
         </MajorPart>
       </Container>
     </Product>
@@ -68,7 +68,7 @@ export const Home = () => (
             research and develop the low-intensity vibration concept. The result was the creation
             of a vibration platform that you stand on as it transmits stimuli to the bones.
           </p>
-          <Link to="/">Buy Now</Link>
+          <LinkButton link="/" title="Buy Now" />
         </MajorPart>
         <MinorPart>
           <StaticImage
@@ -77,7 +77,7 @@ export const Home = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
-            style={{ margin: `auto` }}
+            style={{ margin: `auto`, width: "30%" }}
           />
         </MinorPart>
       </Container>
@@ -110,10 +110,10 @@ export const Home = () => (
             Research & science supports Marodyne LiV
           </h1>
           <p>
-            The Low-intensity Vibration is high frequency, low-magnitude acceleration of the human standing on the device that contributes to bone and muscle wellness. 
+            The Low-intensity Vibration is high frequency, low-magnitude acceleration of the human standing on the device that contributes to bone and muscle wellness.
             These low magnitude accelerations also promote the building of lean muscle mass and the conditioning of muscle reflexes.
           </p>
-          <Link to="/">Buy Now</Link>
+          <LinkButton link="/" title="Buy Now" />
         </MajorPart>
       </Container>
     </Science>
@@ -152,8 +152,8 @@ export const Home = () => (
             Know who is behind the Marodyne LiV:
           </h2>
           <p>
-            Clinton T. Rubin, is Chief Scientific Officer at BTT Health GmbH that manufactures Marodyne LiV devices. 
-            He is SUNY Distinguished Professor and Director of the Center for Biotechnology, Musculoskeletal Research Laboratory. 
+            Clinton T. Rubin, is Chief Scientific Officer at BTT Health GmbH that manufactures Marodyne LiV devices.
+            He is SUNY Distinguished Professor and Director of the Center for Biotechnology, Musculoskeletal Research Laboratory.
             He has spent his scientific career trying to understand how mechanical signals influence the body.
             One of his key findings has been that extremely low magnitude mechanical signals,
             delivered in the form of Low-intensity Vibration (LiV), can dictate the regeneration
@@ -165,7 +165,7 @@ export const Home = () => (
       <h2>
         For this Detailed information on Research
       </h2>
-      <Link to="/">Click Here</Link>
+      <LinkButton link="/" title="Click Here" />
     </Medical>
 
     <StaticImage
@@ -181,10 +181,10 @@ export const Home = () => (
       <h1>
         We're All Ears!
       </h1>
-        <p>
-          Have any questions about the applications of our products, specifications, pricing,
-          shipping or anything else? Our team is ready to answer all your questions!
-        </p>
+      <p>
+        Have any questions about the applications of our products, specifications, pricing,
+        shipping or anything else? Our team is ready to answer all your questions!
+      </p>
       <LinkButton link="/" title="Buy Now" />
     </Contact>
 

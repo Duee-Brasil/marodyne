@@ -3,6 +3,8 @@ import styled from "styled-components"
 export const Product = styled.div`
     width: 100%;
     padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         text-align: center;
@@ -26,6 +28,8 @@ export const Container = styled.div`
 export const MajorPart = styled.div`
     flex: 65%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 
     @media (max-width: 520px) {
         flex: 100%;
@@ -34,6 +38,8 @@ export const MajorPart = styled.div`
 
 export const MinorPart = styled.div`
     flex: 35%;
+    display: flex;
+    flex-direction: column;
 
     @media (max-width: 520px) {
         flex: 100%;
@@ -55,6 +61,8 @@ export const Video = styled.div`
 export const Device = styled.div`
     padding: 3rem 2rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-size: 1.8rem;
@@ -64,6 +72,8 @@ export const Device = styled.div`
 export const Science = styled.div`
     padding: 3rem 2rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-size: 1.8rem;
@@ -74,6 +84,8 @@ export const Medical = styled.div`
     padding: 3rem 2rem;
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-size: 1.8rem;
@@ -85,6 +97,8 @@ export const Contact = styled.div`
     padding: 3rem 2rem;
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-size: 1.8rem;
