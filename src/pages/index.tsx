@@ -14,7 +14,7 @@ export const Home = () => (
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt="Happy and active mature people"
-      style={{ margin: `auto` }}
+      style={{ margin: `auto`, width: "100%" }}
     />
 
     <Product>
@@ -29,7 +29,7 @@ export const Home = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Marodyne LiV device"
-            style={{ margin: `auto` }}
+            style={{ margin: `auto`, width: "100%" }}
           />
         </MinorPart>
         <MajorPart>
@@ -90,7 +90,7 @@ export const Home = () => (
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt=""
-      style={{ margin: `auto` }}
+      style={{ margin: `auto`, width: "100%" }}
     />
 
     <Science>
@@ -102,7 +102,7 @@ export const Home = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
-            style={{ margin: `auto` }}
+            style={{ margin: `auto`, width: "100%" }}
           />
         </MinorPart>
         <MajorPart>
@@ -124,7 +124,7 @@ export const Home = () => (
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt=""
-      style={{ margin: `auto` }}
+      style={{ margin: `auto`, width: "100%" }}
     />
 
     <Medical>
@@ -144,7 +144,7 @@ export const Home = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
-            style={{ margin: `auto` }}
+            style={{ margin: `auto`, width: "100%" }}
           />
         </MinorPart>
         <MajorPart>
@@ -174,7 +174,7 @@ export const Home = () => (
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt=""
-      style={{ margin: `auto` }}
+      style={{ margin: `auto`, width: "100%" }}
     />
 
     <Contact>

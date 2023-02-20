@@ -8,10 +8,15 @@ const Container = styled.header`
   padding: 2rem 4rem;
   margin: 0;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 1920px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const StyledLink = styled(Link)`
@@ -26,6 +31,10 @@ const StyledLink = styled(Link)`
 const Content = styled.div`
   align-items: center;
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `
 
 type HeaderProps = {
@@ -36,15 +45,15 @@ export const Header = ({ siteTitle }: HeaderProps) => (
   <Container>
     <Content>
       <StyledLink to="/">
-      <StaticImage
-        src="../images/Logo.png"
-        loading="eager"
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="Marodyne LiV logo"
-        style={{ margin: `auto` }}
-      />
-    </StyledLink>
+        <StaticImage
+          src="../images/Logo.png"
+          loading="eager"
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt="Marodyne LiV logo"
+          style={{ maxWidth: "200px" }}
+        />
+      </StyledLink>
     </Content>
     <Content>
       <StyledLink to="/">Home</StyledLink>
@@ -57,7 +66,7 @@ export const Header = ({ siteTitle }: HeaderProps) => (
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="Marodyne LiV logo"
-        style={{ margin: `auto` }}
+        style={{ margin: `auto`, width: "40px" }}
       /></StyledLink>
     </Content>
   </Container>
