@@ -8,7 +8,7 @@ import { GlobalStyle } from "./globalStyle"
 
 const Main = styled.main`
   width: 100vw;
-  max-width: 1024px;
+  max-width: 1920px;
   margin: auto;
 `
 
