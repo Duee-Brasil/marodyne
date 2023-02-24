@@ -11,10 +11,11 @@ export const Home = () => (
     <StaticImage
       src="../images/Grnade - Op 1.png"
       loading="eager"
-      quality={95}
       formats={["auto", "webp", "avif"]}
       alt="Happy and active mature people"
-      style={{ margin: `auto`, width: "100%" }}
+      layout="constrained"
+      aspectRatio={1920 / 1040}
+      style={{ margin: `auto` }}
     />
 
     <Product>
@@ -26,10 +27,11 @@ export const Home = () => (
           <StaticImage
             src="../images/Balanca.png"
             loading="eager"
-            quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Marodyne LiV device"
-            style={{ margin: `auto`, width: "100%" }}
+            layout="constrained"
+            aspectRatio={612 / 346}
+            style={{ margin: `auto` }}
           />
         </MinorPart>
         <MajorPart>
@@ -74,10 +76,11 @@ export const Home = () => (
           <StaticImage
             src="../images/Setinha.png"
             loading="eager"
-            quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
-            style={{ margin: `auto`, width: "30%" }}
+            layout="constrained"
+            aspectRatio={163 / 269}
+            style={{ margin: `auto`, maxWidth: "30%" }}
           />
         </MinorPart>
       </Container>
@@ -87,10 +90,11 @@ export const Home = () => (
     <StaticImage
       src="../images/Grnade - Op 2.png"
       loading="eager"
-      quality={95}
       formats={["auto", "webp", "avif"]}
       alt=""
-      style={{ margin: `auto`, width: "100%" }}
+      layout="constrained"
+      aspectRatio={1920 / 1040}
+      style={{ margin: `auto` }}
     />
 
     <Science>
@@ -99,10 +103,11 @@ export const Home = () => (
           <StaticImage
             src="../images/Foto processo.png"
             loading="eager"
-            quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
-            style={{ margin: `auto`, width: "100%" }}
+            layout="constrained"
+            aspectRatio={386 / 597}
+            style={{ margin: `auto` }}
           />
         </MinorPart>
         <MajorPart>
@@ -121,10 +126,11 @@ export const Home = () => (
     <StaticImage
       src="../images/Media - Op 2.png"
       loading="eager"
-      quality={95}
       formats={["auto", "webp", "avif"]}
       alt=""
-      style={{ margin: `auto`, width: "100%" }}
+      layout="constrained"
+      aspectRatio={1920 / 870}
+      style={{ margin: `auto` }}
     />
 
     <Medical>
@@ -141,10 +147,11 @@ export const Home = () => (
           <StaticImage
             src="../images/Foto.png"
             loading="eager"
-            quality={95}
             formats={["auto", "webp", "avif"]}
             alt=""
-            style={{ margin: `auto`, width: "100%" }}
+            layout="constrained"
+            aspectRatio={579 / 580}
+            style={{ margin: `auto` }}
           />
         </MinorPart>
         <MajorPart>
@@ -171,10 +178,11 @@ export const Home = () => (
     <StaticImage
       src="../images/Media - Op 1.png"
       loading="eager"
-      quality={95}
       formats={["auto", "webp", "avif"]}
       alt=""
-      style={{ margin: `auto`, width: "100%" }}
+      layout="fullWidth"
+      aspectRatio={1031 / 460}
+      style={{ margin: `auto` }}
     />
 
     <Contact>

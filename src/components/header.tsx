@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Container = styled.header`
   background-color: white;
   padding: 2rem 4rem;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;

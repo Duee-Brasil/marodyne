@@ -7,7 +7,7 @@ const Container = styled.footer`
   background: rgb(0,115,213);
   background: linear-gradient(45deg, rgba(0,115,213,1) 0%, rgba(0,194,187,1) 65%);
   padding: 2rem 4rem 0 4rem;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -32,7 +32,6 @@ const Content = styled.div`
   flex-direction: column;
   flex: 15%;
   justify-content: center;
-  text-align: center;
 
   @media (max-width: 768px) {
       flex: 100%;
@@ -55,25 +54,25 @@ export const Footer = () => (
           loading="eager"
           quality={95}
           formats={["auto", "webp", "avif"]}
-          alt="Marodyne LiV logo"
-          style={{ width: "100%" }}
+          alt="Copa Health logo"
+          layout="fullWidth"
         />
         <p style={{ color: "white", fontSize: "0.6rem", fontWeight: "bold" }}>11860 W State Road 84 Suite B8 Davie, FL 33325</p>
       </StyledLink>
     </Content>
     <Content>
-      <StaticImage
+      {/* <StaticImage
         src="../images/fda.png"
         loading="eager"
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="Marodyne LiV logo"
         style={{ maxWidth: "100px", margin: "auto" }}
-      />
+      /> */}
     </Content>
-    <Content>
+    <Content style={{ textAlign: "center" }}>
       <h3>Social Media</h3>
-      <Content style={{ flexDirection: "row" }}>
+      <Content style={{ flexDirection: "row", padding: "auto 1rem" }}>
         <StyledLink to="/">
           <StaticImage
             src="../images/Logo Facebook.png"
@@ -81,7 +80,7 @@ export const Footer = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Marodyne LiV Facebook"
-            style={{ margin: `auto` }}
+            style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
           />
         </StyledLink>
         <StyledLink to="/">
@@ -91,7 +90,7 @@ export const Footer = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Marodyne LiV Instagram"
-            style={{ margin: `auto` }}
+            style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
           />
         </StyledLink>
         <StyledLink to="/">
@@ -101,7 +100,7 @@ export const Footer = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Marodyne LiV Linkedin"
-            style={{ margin: `auto` }}
+            style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
           />
         </StyledLink>
       </Content>
