@@ -2,9 +2,24 @@
 import * as React from "react"
 import { Link, HeadFC } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { Layout, LinkButton, Seo } from "../components"
 import { Contact, Container, Device, MajorPart, Medical, MinorPart, Product, Science, Video } from "../components/indexStyle"
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  swipeToSlide: true,
+};
 
 export const Home = () => (
   <Layout>
@@ -50,7 +65,28 @@ export const Home = () => (
     </Product>
 
     <Video>
-      <iframe src="https://www.youtube.com/embed/NTFN6PNTTWg" title="Marodyne First Use" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <Slider {...settings}>
+          <iframe src="https://www.youtube.com/embed/NTFN6PNTTWg"
+            title="Marodyne First Use"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/TrZaM-35nkM"
+            title="Dr. Clinton Rubin, Low Intensity Vibration for Bone Health"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/DR2DvqcziVo"
+            title="Q&A Marodyne LiV Device with Sara Meeks"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/g7wOc8xJisY"
+            title="Marodyne LiV Device User Guide"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen></iframe>
+      </Slider>
     </Video>
 
     <Device>
