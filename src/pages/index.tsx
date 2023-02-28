@@ -66,26 +66,31 @@ export const Home = () => (
 
     <Video>
       <Slider {...settings}>
-          <iframe src="https://www.youtube.com/embed/NTFN6PNTTWg"
-            title="Marodyne First Use"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen></iframe>
-          <iframe src="https://www.youtube.com/embed/TrZaM-35nkM"
-            title="Dr. Clinton Rubin, Low Intensity Vibration for Bone Health"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen></iframe>
-          <iframe src="https://www.youtube.com/embed/DR2DvqcziVo"
-            title="Q&A Marodyne LiV Device with Sara Meeks"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen></iframe>
-          <iframe src="https://www.youtube.com/embed/g7wOc8xJisY"
-            title="Marodyne LiV Device User Guide"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen></iframe>
+        <iframe src="https://www.youtube.com/embed/nSWfUXe1DJs"
+          title="Marodyne First Use"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen></iframe>
+        <iframe src="https://www.youtube.com/embed/NTFN6PNTTWg"
+          title="Marodyne First Use"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen></iframe>
+        <iframe src="https://www.youtube.com/embed/TrZaM-35nkM"
+          title="Dr. Clinton Rubin, Low Intensity Vibration for Bone Health"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen></iframe>
+        <iframe src="https://www.youtube.com/embed/DR2DvqcziVo"
+          title="Q&A Marodyne LiV Device with Sara Meeks"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen></iframe>
+        <iframe src="https://www.youtube.com/embed/g7wOc8xJisY"
+          title="Marodyne LiV Device User Guide"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen></iframe>
       </Slider>
     </Video>
 
@@ -96,15 +101,13 @@ export const Home = () => (
       <Container>
         <MajorPart>
           <p>
-            An astronaut can lose about 1.5% of their bone mass in a single month. By
-            comparison, if not treated, osteoporosis affected women can lose about the same
-            amount of their bone mass in one year.
+            An astronaut will suffer deconditioning of their musculoskeletal system while in 
+            a zero-gravity environment. This is analogous to aging hereon earth.
           </p>
           <p>
-            To mitigate astronaut’s bone loss while in space, NASA (National Aeronautics and
-            Space Administration) put together a team, led by Professor Clinton Rubin, to
-            research and develop the low-intensity vibration concept. The result was the creation
-            of a vibration platform that you stand on as it transmits stimuli to the bones.
+            To mitigate the astronaut’s muscle and bone loss while in space, NASA (National 
+            Aeronautics and Space Administration) put together a team, led by Professor 
+            Clinton Rubin, to research and develop the low-intensity vibration concept.
           </p>
           <LinkButton link="/" title="Buy Now" />
         </MajorPart>
@@ -137,12 +140,12 @@ export const Home = () => (
       <Container>
         <MinorPart>
           <StaticImage
-            src="../images/Foto processo.png"
+            src="../images/joelho.png"
             loading="eager"
             formats={["auto", "webp", "avif"]}
             alt=""
             layout="constrained"
-            aspectRatio={386 / 597}
+            aspectRatio={1024 / 1295}
             style={{ margin: `auto` }}
           />
         </MinorPart>
