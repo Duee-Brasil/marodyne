@@ -60,7 +60,7 @@ export const Header = ({ siteTitle }: HeaderProps) => (
       <StyledLink to="/">Marodyne-LiV</StyledLink>
       <StyledLink to="/">How to buy</StyledLink>
       <StyledLink to="/">Contact Us</StyledLink>
-      <StyledLink to="/"><StaticImage
+      <StyledLink to="https://shop.marodyneliv.us/"><StaticImage
         src="../images/Sacola de compras.png"
         loading="eager"
         quality={95}

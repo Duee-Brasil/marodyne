@@ -61,14 +61,14 @@ export const Footer = () => (
       </StyledLink>
     </Content>
     <Content>
-      {/* <StaticImage
+      <StaticImage
         src="../images/fda.png"
         loading="eager"
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="Marodyne LiV logo"
         style={{ maxWidth: "100px", margin: "auto" }}
-      /> */}
+      />
     </Content>
     <Content style={{ textAlign: "center" }}>
       <h3>Social Media</h3>

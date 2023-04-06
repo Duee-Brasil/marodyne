@@ -59,7 +59,7 @@ export const Home = () => (
             obesity, relieving minor pain or treating a temporary increase in local circulation may
             be safely overcome using Marodyne LiV for 10 - 20 minutes a day.
           </p>
-          <LinkButton link="/" title="Buy Now" />
+          <LinkButton link="https://shop.marodyneliv.us/" title="Buy Now" />
         </MajorPart>
       </Container>
     </Product>
@@ -157,7 +157,7 @@ export const Home = () => (
             The Low-intensity Vibration is high frequency, low-magnitude acceleration of the human standing on the device that contributes to bone and muscle wellness.
             These low magnitude accelerations also promote the building of lean muscle mass and the conditioning of muscle reflexes.
           </p>
-          <LinkButton link="/" title="Buy Now" />
+          <LinkButton link="https://shop.marodyneliv.us/" title="Buy Now" />
         </MajorPart>
       </Container>
     </Science>
@@ -232,7 +232,7 @@ export const Home = () => (
         Have any questions about the applications of our products, specifications, pricing,
         shipping or anything else? Our team is ready to answer all your questions!
       </p>
-      <LinkButton link="/" title="Buy Now" />
+      <LinkButton link="https://shop.marodyneliv.us/" title="Buy Now" />
     </Contact>
 
   </Layout>
