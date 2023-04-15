@@ -1,6 +1,6 @@
 // If you don't want to use TypeScript you can delete this file!
 import * as React from "react"
-import { Link, HeadFC } from "gatsby"
+import { HeadFC } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Slider from "react-slick";
 
@@ -211,7 +211,7 @@ export const Home = () => (
       <h2>
         For this Detailed information on Research
       </h2>
-      <LinkButton link="/" title="Click Here" />
+      <LinkButton link="https://www.stonybrook.edu/commcms/bme/people/c_rubin.php" title="Click Here" />
     </Medical>
 
     <StaticImage
