@@ -109,7 +109,7 @@ export const Home = () => (
             Aeronautics and Space Administration) put together a team, led by Professor 
             Clinton Rubin, to research and develop the low-intensity vibration concept.
           </p>
-          <LinkButton link="/" title="Buy Now" />
+          <LinkButton link="https://shop.marodyneliv.us/" title="Buy Now" />
         </MajorPart>
         <MinorPart>
           <StaticImage
