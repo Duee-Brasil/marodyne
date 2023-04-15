@@ -22,7 +22,7 @@ const settings = {
 };
 
 export const Home = () => (
-  <Layout>
+  <Layout id="home">
     <StaticImage
       src="../images/Grnade - Op 1.png"
       loading="eager"
@@ -33,7 +33,7 @@ export const Home = () => (
       style={{ margin: `auto` }}
     />
 
-    <Product>
+    <Product id="device">
       <h1>
         Available in the United States, Marodyne Low-intensity Vibration (LiV) Device
       </h1>
