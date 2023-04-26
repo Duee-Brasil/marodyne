@@ -62,7 +62,7 @@ export const Footer = () => (
     </Content>
     <Content>
       <StaticImage
-        src="../images/fda.png"
+        src="../images/fda.jpeg"
         loading="eager"
         quality={95}
         formats={["auto", "webp", "avif"]}
