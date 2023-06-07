@@ -47,7 +47,7 @@ const Content = styled.div`
 
 export const Footer = () => (
   <Container>
-    <Content>
+    <Content style={{ flex: '20%' }}>
       <StyledLink to="/">
         <StaticImage
           src="../images/Logo copa.png"
@@ -62,7 +62,7 @@ export const Footer = () => (
     </Content>
     <Content>
       <StaticImage
-        src="../images/fda.jpeg"
+        src="../images/fda2.png"
         loading="eager"
         quality={95}
         formats={["auto", "webp", "avif"]}
@@ -116,7 +116,7 @@ export const Footer = () => (
       <StyledLink to="/">Know more</StyledLink>
     </Content>
     <Content style={{ flex: "100%", width: "100%", display: "block", textAlign: "center", margin: "10px auto 2px auto" }}>
-      © {new Date().getFullYear()} &middot; Developed by
+      Marodyne LiV is a trademark of BTT Health GmbH © {new Date().getFullYear()} &middot; Developed by
       {` `}
       <a href="https://www.dueebrasil.com.br">Duee Brasil</a>
     </Content>
