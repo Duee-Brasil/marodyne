@@ -57,7 +57,7 @@ export const Footer = () => (
           alt="Copa Health logo"
           layout="fullWidth"
         />
-        <p style={{ color: "white", fontSize: "0.6rem", fontWeight: "bold" }}>11860 W State Road 84 Suite B8 Davie, FL 33325</p>
+        <p style={{ color: "white", fontSize: "0.5rem" }}>11860 W State Road 84 Suite B8 Davie, FL 33325</p>
       </StyledLink>
     </Content>
     <Content>
