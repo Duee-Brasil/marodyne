@@ -53,12 +53,10 @@ module.exports = {
         languages,
         defaultLanguage,
         siteUrl: `marodyneliv.us`,
-        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
         trailingSlash: "always",
-        // you can pass any i18next options
         i18nextOptions: {
           defaultNS: "index",
-          fallbackLng: defaultLanguage,
+          // fallbackLng: defaultLanguage,
           supportedLngs: languages,
           interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
@@ -71,7 +69,6 @@ module.exports = {
         pages: [
           {
             matchPath: "/:lang",
-            getLanguageFromPath: true,
           },
         ],
       },
