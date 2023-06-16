@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 import { useI18next, useTranslation } from "gatsby-plugin-react-i18next"
-import { useMemo, useState } from "react"
 import ReactLanguageSelect from 'react-languages-select';
 import 'react-languages-select/css/react-languages-select.css';
 
@@ -41,15 +40,12 @@ const Content = styled.div`
   }
 `
 
-type HeaderProps = {
-  siteTitle?: string
-}
-
-export const Header = ({ siteTitle }: HeaderProps) => {
+export const Header = () => {
   const { languages, changeLanguage, language } = useI18next();
   const { t } = useTranslation();
 
   const changeHandler = (value: string) => {
+    console.log("aqui")
     changeLanguage(value)
   }
   

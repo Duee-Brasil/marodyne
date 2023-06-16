@@ -21,7 +21,7 @@ export const Layout = ({ children }: any) => {
   return (
     <>
       <GlobalStyle />
-      <Header siteTitle={"Marodyne"} />
+      <Header />
       <Main>{children}</Main>
       <Footer />
     </>
