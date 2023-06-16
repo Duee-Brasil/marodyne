@@ -3,6 +3,9 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 import { useI18next, useTranslation } from "gatsby-plugin-react-i18next"
+import { useMemo, useState } from "react"
+import ReactLanguageSelect from 'react-languages-select';
+import 'react-languages-select/css/react-languages-select.css';
 
 const Container = styled.header`
   background-color: white;
@@ -43,8 +46,12 @@ type HeaderProps = {
 }
 
 export const Header = ({ siteTitle }: HeaderProps) => {
-  const { languages, changeLanguage } = useI18next();
+  const { languages, changeLanguage, language } = useI18next();
   const { t } = useTranslation();
+
+  const changeHandler = (value: string) => {
+    changeLanguage(value)
+  }
   
   return (
   <Container>
@@ -61,20 +68,6 @@ export const Header = ({ siteTitle }: HeaderProps) => {
       </StyledLink>
     </Content>
     <Content>
-        <ul className="languages">
-          {languages.map((lng) => (
-            <li key={lng}>
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  changeLanguage(lng);
-                }}>
-                {lng}
-              </a>
-            </li>
-          ))}
-        </ul>
       <StyledLink to="#home">{t("Home")}</StyledLink>
       <StyledLink to="#device">Marodyne-LiV</StyledLink>
         <StyledLink to="https://shop.marodyneliv.us">{t("How to buy")}</StyledLink>
@@ -87,6 +80,14 @@ export const Header = ({ siteTitle }: HeaderProps) => {
         alt="Marodyne LiV logo"
         style={{ margin: `auto`, width: "40px" }}
       /></StyledLink>
+        <ReactLanguageSelect
+          searchable={true}
+          languages={languages}
+          defaultLanguage={language}
+          onSelect={changeHandler}
+          selectedSize={10}
+          optionsSize={12}
+          />
     </Content>
   </Container>
 )}

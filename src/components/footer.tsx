@@ -69,7 +69,7 @@ export const Footer = () => {
         src="../images/fda2w.png"
         loading="eager"
         quality={95}
-          formats={["auto"]}
+        formats={["auto"]}
         alt="FDA logo"
         style={{ maxWidth: "100px", margin: "auto" }}
       />
