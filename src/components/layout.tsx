@@ -5,6 +5,7 @@ import { initializeApp } from "firebase/app";
 import { Header } from "./header"
 import { Footer } from "./footer"
 import { GlobalStyle } from "./globalStyle"
+import 'gatsby-plugin-react-i18next';
 
 const Main = styled.main`
   width: 100vw;

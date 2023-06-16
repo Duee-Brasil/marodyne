@@ -6,6 +6,8 @@ require("dotenv").config({
   path: `.env`,
 })
 
+const { languages, defaultLanguage } = require("./languages")
+
 module.exports = {
   siteMetadata: {
     title: `Marodyne`,
@@ -22,6 +24,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -36,6 +45,35 @@ module.exports = {
         // theme_color: `#0F2B76`,
         display: `minimal-ui`,
         icon: `src/images/Logo.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        languages,
+        defaultLanguage,
+        siteUrl: `marodyneliv.us`,
+        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
+        trailingSlash: "always",
+        // you can pass any i18next options
+        i18nextOptions: {
+          defaultNS: "index",
+          fallbackLng: defaultLanguage,
+          supportedLngs: languages,
+          interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false,
+          lowerCaseLng: true,
+          cleanCode: true,
+        },
+        pages: [
+          {
+            matchPath: "/:lang",
+            getLanguageFromPath: true,
+          },
+        ],
       },
     },
   ],

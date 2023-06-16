@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Container = styled.footer`
   background: rgb(0,115,213);
@@ -45,7 +46,10 @@ const Content = styled.div`
   }
 `
 
-export const Footer = () => (
+export const Footer = () => {
+  const { t } = useTranslation();
+  
+  return (
   <Container>
     <Content style={{ flex: '20%' }}>
       <StyledLink to="/">
@@ -65,13 +69,13 @@ export const Footer = () => (
         src="../images/fda2w.png"
         loading="eager"
         quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="Marodyne LiV logo"
+          formats={["auto"]}
+        alt="FDA logo"
         style={{ maxWidth: "100px", margin: "auto" }}
       />
     </Content>
     <Content style={{ textAlign: "center" }}>
-      <h3>Social Media</h3>
+      <h3>{t("Social Media")}</h3>
       <Content style={{ flexDirection: "row", padding: "auto 1rem" }}>
         <StyledLink to="/">
           <StaticImage
@@ -107,18 +111,18 @@ export const Footer = () => (
 
     </Content>
     <Content>
-      <h3>About Us</h3>
-      <StyledLink to="/">Company Profile</StyledLink>
-      <StyledLink to="/">Disclaimer</StyledLink>
+      <h3>{t("About Us")}</h3>
+      <StyledLink to="/">{t("Company Profile")}</StyledLink>
+      <StyledLink to="/">{t("Disclaimer")}</StyledLink>
     </Content>
     <Content>
-      <h3>Connect</h3>
-      <StyledLink to="/">Know more</StyledLink>
+      <h3>{t("Connect")}</h3>
+      <StyledLink to="/">{t("Know more")}</StyledLink>
     </Content>
     <Content style={{ flex: "100%", width: "100%", display: "block", textAlign: "center", margin: "10px auto 2px auto" }}>
-      Marodyne LiV is a trademark of BTT Health GmbH © {new Date().getFullYear()} &middot; Developed by
+      Marodyne LiV {t("is a trademark of")} BTT Health GmbH © {new Date().getFullYear()} &middot; {t("Developed by")}
       {` `}
       <a href="https://www.dueebrasil.com.br">Duee Brasil</a>
     </Content>
   </Container>
-)
+)}

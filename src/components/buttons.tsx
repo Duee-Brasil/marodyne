@@ -1,8 +1,7 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
     text-decoration: none;
     color: #0F2B76;
     border: 1px solid #0F2B76;
@@ -19,7 +18,7 @@ type LinkButtonProps = {
 }
 
 export const LinkButton = ({ title, link }: LinkButtonProps) => (
-    <StyledLink to={link}>
+    <StyledLink href={link}>
         {title}
     </StyledLink>
 )
