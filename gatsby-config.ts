@@ -52,12 +52,10 @@ module.exports = {
       options: {
         languages,
         defaultLanguage,
-        siteUrl: `marodyneliv.us`,
+        siteUrl: `https://marodyneliv.us`,
         trailingSlash: "always",
         i18nextOptions: {
           defaultNS: "index",
-          fallbackLng: defaultLanguage,
-          supportedLngs: languages,
           interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
           },
@@ -66,12 +64,6 @@ module.exports = {
           lowerCaseLng: true,
           cleanCode: true,
         },
-        pages: [
-          {
-            // matchPath: "/:lang",
-            matchPath: "/",
-          },
-        ],
       },
     },
   ],
