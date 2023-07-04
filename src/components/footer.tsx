@@ -48,81 +48,83 @@ const Content = styled.div`
 
 export const Footer = () => {
   const { t } = useTranslation();
-  
+
   return (
-  <Container>
-    <Content style={{ flex: '20%' }}>
-      <StyledLink to="/">
-        <StaticImage
-          src="../images/Logo copa.png"
-          loading="eager"
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt="Copa Health logo"
-          layout="fullWidth"
-        />
-        <p style={{ color: "white", fontSize: "0.5rem" }}>11860 W State Road 84 Suite B8 Davie, FL 33325</p>
-      </StyledLink>
-    </Content>
-    <Content>
-      <StaticImage
-        src="../images/fda2w.png"
-        loading="eager"
-        quality={95}
-        formats={["auto"]}
-        alt="FDA logo"
-        style={{ maxWidth: "100px", margin: "auto" }}
-      />
-    </Content>
-    <Content style={{ textAlign: "center" }}>
-      <h3>{t("Social Media")}</h3>
-      <Content style={{ flexDirection: "row", padding: "auto 1rem" }}>
+    <Container>
+      <Content style={{ flex: '20%' }}>
         <StyledLink to="/">
           <StaticImage
-            src="../images/Logo Facebook.png"
+            src="../images/Logo copa.png"
             loading="eager"
             quality={95}
             formats={["auto", "webp", "avif"]}
-            alt="Marodyne LiV Facebook"
-            style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
+            alt="Copa Health logo"
+            layout="fullWidth"
+            style={{ maxWidth: "180px" }}
           />
-        </StyledLink>
-        <StyledLink to="/">
-          <StaticImage
-            src="../images/Logo Instagram.png"
-            loading="eager"
-            quality={95}
-            formats={["auto", "webp", "avif"]}
-            alt="Marodyne LiV Instagram"
-            style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
-          />
-        </StyledLink>
-        <StyledLink to="/">
-          <StaticImage
-            src="../images/Logo Linkedin.png"
-            loading="eager"
-            quality={95}
-            formats={["auto", "webp", "avif"]}
-            alt="Marodyne LiV Linkedin"
-            style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
-          />
+          <p style={{ color: "white", fontSize: "0.6rem" }}>11860 W State Road 84 Suite B8 Davie, FL 33325</p>
         </StyledLink>
       </Content>
+      <Content>
+        <StaticImage
+          src="../images/fda2w.png"
+          loading="eager"
+          quality={95}
+          formats={["auto"]}
+          alt="FDA logo"
+          style={{ maxWidth: "120px", margin: "auto" }}
+        />
+      </Content>
+      <Content style={{ textAlign: "center" }}>
+        <h3>{t("Social Media")}</h3>
+        <Content style={{ flexDirection: "row", padding: "auto 1rem" }}>
+          <StyledLink to="https://www.facebook.com/copahealth">
+            <StaticImage
+              src="../images/Logo Facebook.png"
+              loading="eager"
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt="Marodyne LiV Facebook"
+              style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
+            />
+          </StyledLink>
+          <StyledLink to="https://www.instagram.com/copahealth.us/">
+            <StaticImage
+              src="../images/Logo Instagram.png"
+              loading="eager"
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt="Marodyne LiV Instagram"
+              style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
+            />
+          </StyledLink>
+          <StyledLink to="https://www.linkedin.com/company/copahealth-marodyne-liv/">
+            <StaticImage
+              src="../images/Logo Linkedin.png"
+              loading="eager"
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt="Marodyne LiV Linkedin"
+              style={{ margin: `auto`, maxWidth: "3rem", minWidth: "2rem" }}
+            />
+          </StyledLink>
+        </Content>
 
-    </Content>
-    <Content>
-      <h3>{t("About Us")}</h3>
-      <StyledLink to="/">{t("Company Profile")}</StyledLink>
-      <StyledLink to="/">{t("Disclaimer")}</StyledLink>
-    </Content>
-    <Content>
-      <h3>{t("Connect")}</h3>
-      <StyledLink to="/">{t("Know more")}</StyledLink>
-    </Content>
-    <Content style={{ flex: "100%", width: "100%", display: "block", textAlign: "center", margin: "10px auto 2px auto" }}>
-      Marodyne LiV {t("is a trademark of")} BTT Health GmbH © {new Date().getFullYear()} &middot; {t("Developed by")}
-      {` `}
-      <a href="https://www.dueebrasil.com.br">Duee Brasil</a>
-    </Content>
-  </Container>
-)}
+      </Content>
+      {/* <Content>
+        <h3>{t("About Us")}</h3>
+        <StyledLink to="/">{t("Company Profile")}</StyledLink>
+        <StyledLink to="/">{t("Disclaimer")}</StyledLink>
+      </Content> */}
+      <Content>
+        <h3>{t("Connect")}</h3>
+        <StyledLink to="https://shop.marodyneliv.us/pages/contact">{t("Know more")}</StyledLink>
+      </Content>
+      <Content style={{ flex: "100%", width: "100%", display: "block", textAlign: "center", margin: "10px auto 2px auto" }}>
+        Marodyne LiV {t("is a trademark of")} BTT Health GmbH © {new Date().getFullYear()} &middot; {t("Developed by")}
+        {` `}
+        <a href="https://www.dueebrasil.com.br">Duee Brasil</a>
+      </Content>
+    </Container>
+  )
+}

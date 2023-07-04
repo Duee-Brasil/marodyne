@@ -66,5 +66,21 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-T8XZTVF",
+        includeInDevelopment: false,
+
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "1716441688797602",
+      },
+    },
   ],
 }
